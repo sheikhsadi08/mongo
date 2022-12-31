@@ -11,7 +11,7 @@ router.get("/:userId", userController.getUserById);
  * update user by id
  * @method put
  */
-router.put("/:userId", () => {});
+router.put("/:userId", userController.putUserById);
 
 /**______________________________
  * update user by id
