@@ -13,6 +13,7 @@ const findUserByProperty = (key, value) => {
   return User.findOne({ [key]: value });
 };
 
+// create new user
 const createNewUser = ({ name, email, password, roles, accountStatus }) => {
   const user = new User({
     name,
@@ -24,6 +25,7 @@ const createNewUser = ({ name, email, password, roles, accountStatus }) => {
   return user.save();
 };
 
+// update user
 const updateUser = async (id, data) => {
   const user = await findUserByProperty("email", data.email);
 

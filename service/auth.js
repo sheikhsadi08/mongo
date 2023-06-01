@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 const { findUserByProperty, createNewUser } = require("./user");
 const error = require("../utilities/error");
 
-// ------------------register service------------------
+// ------------------register service------------------ //
 const registerService = async ({
   name,
   email,
